@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="styles.css">
+ <head>
+   <h1 id="title">Food Survey Form</h1>
+   <p id="description">What is your favorite type of food?</p>
+ </head>
+ <body>
+   <form id="survey-form">
+     <label id="name-label" for="name">Name<input placeholder="Enter your name" id="name" type="text" required></label>
+     <label id="email-label" for="email">Email<input placeholder="Enter your email" id="email" type="email" required/></label>
+     <label id="number-label"for="number">Age <em>(optional)</em><input placeholder="Enter your age (optional)" type="number" min="13" max="120" id="number" required></label>
+   <select id="dropdown">What kind of food do you like?
+    <option value="">(select one)</option>
+     <option value="1"></option>
+     <option value="2"></option>
+     <option valiue="3"></option>
+   </select>
+    <legend> Do you have any food requirements? </legend>
+     <label for="yes">Yes<input id="yes" name="Food requirements" type="radio" value="1"></label>
+     <label for="No">No<input id="No" name="Food requirements" type="radio" value="2">
+    </label>
+    <legend>What is your favourite cousine?</legend>
+    <label for="italian">Italian<input id="italian" value="1" type="checkbox"></label>
+    <label for="brazilian">Brazilian<input id="brazilian" value="2" type="checkbox"></label>
+    <label for="japanese">Japanese<input value="3" id="japanese" type="checkbox"></label>
+    <label for="thai">Thai<input value="4" id="thai" type="checkbox"></label>
+    <label for="vietnamese">Vietnamese<input value="5" id="vietnamese" type="checkbox"></label>
+    <label for="french">French<input value="6" id="french" type="checkbox"></label>
+    <label for="other">Other<input id="other" type="checkbox" value="7"></label>
+   <label for="favourite-dish">What is your favourite dish?<textarea id="favourite-dish" name="favourite-dish" rows="3" cols="30" placeholder="I love the chicken parma because..."></textarea></label>
+    <label>
+     <input id="submit" type="submit" value="Submit"/>
+    </label>
+   </form>
+ </body>
+</html>
